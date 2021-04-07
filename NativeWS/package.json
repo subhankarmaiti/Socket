@@ -1,0 +1,20 @@
+{
+  "name": "NativeWS",
+  "version": "1.0.0",
+  "description": "",
+  "main": "justWsServer.js",
+  "scripts": {
+    "start": "node jusrWsServer.js",
+    "dev": "nodemon justWsServer.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^7.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
