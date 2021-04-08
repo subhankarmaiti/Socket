@@ -1,0 +1,21 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.min.js"></script>
+<script>
+  const socket = io("http://localhost:8000");
+  console.log(socket);
+
+  socket.on("connect", (data) => {
+    socket.on("welcome", (message) => {
+      console.log(message);
+    });
+    socket.emit("message", {
+      data: "I am so excited I am connected! It is like Christmas!",
+    });
+  });
+  //   socket.on('ping',()=>{
+  //       console.log('Ping was received from the server');
+  //   })
+  //   socket.on('pong',(latency)=>{
+  //       console.log(latency);
+  //       console.log('Pong was sent from the server');
+  //   })
+</script>
